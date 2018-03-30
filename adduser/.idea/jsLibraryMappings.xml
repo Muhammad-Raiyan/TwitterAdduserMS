@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{Twitter_Clone/node_modules}" />
+    <file url="PROJECT" libraries="{@types/bcryptjs, @types/express, @types/joi, @types/mongoose, @types/node, @types/passport, Twitter_Clone/node_modules}" />
+  </component>
+</project>

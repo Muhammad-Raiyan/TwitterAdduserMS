@@ -1,0 +1,25 @@
+version: '3'
+services:
+  adduser: 
+    build: './adduser'
+    ports: 
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - MONGO_DB_URI=mongodb://db/microservices
+
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+ 
+  nginx:
+    image: nginx:latest
+    ports: 
+      - "80:80"
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - adduser
+   

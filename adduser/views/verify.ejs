@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/verify.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h1>Verify your account</h1>
+        <form action="/verify" method="POST">
+            <div class="form-group">
+                <label for="secretToken">Secret Token</label>
+                <input type="text" class="form-control" id="key" placeholder="Token" name="key" required autofocus>
+                <label for="secretToken">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Email" name="email" required autofocus>
+            </div>
+            <button type="submit" class="btn btn-default">Verify</button>
+        </form>
+    </div>
+
+</div><!-- Close container -->
+
+</body>
+</html>
